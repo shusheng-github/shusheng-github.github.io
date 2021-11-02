@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>前端之道</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="shusheng study react">
+    
+    <link rel="preload" href="/assets/css/0.styles.101e93c3.css" as="style"><link rel="preload" href="/assets/js/app.5fac2bb4.js" as="script"><link rel="preload" href="/assets/js/2.50dd06d5.js" as="script"><link rel="preload" href="/assets/js/8.bba9c763.js" as="script"><link rel="prefetch" href="/assets/js/10.5bec9d36.js"><link rel="prefetch" href="/assets/js/11.a1ca3130.js"><link rel="prefetch" href="/assets/js/12.6cf2ec98.js"><link rel="prefetch" href="/assets/js/13.606177f1.js"><link rel="prefetch" href="/assets/js/14.b6ed1a25.js"><link rel="prefetch" href="/assets/js/15.d23ab005.js"><link rel="prefetch" href="/assets/js/16.ce2e5f7c.js"><link rel="prefetch" href="/assets/js/3.0277475e.js"><link rel="prefetch" href="/assets/js/4.d6949b90.js"><link rel="prefetch" href="/assets/js/5.eefddad5.js"><link rel="prefetch" href="/assets/js/6.ffe6f60a.js"><link rel="prefetch" href="/assets/js/7.4bcf017a.js"><link rel="prefetch" href="/assets/js/9.ab14b2c3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.101e93c3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端之道</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/noteDocs/JavaScript/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/noteDocs/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/noteDocs/JavaScript/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/noteDocs/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="guide"><a href="#guide" class="header-anchor">#</a> guide</h1> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token function">getDialogTemplate</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  pageSource<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>   <span class="token comment">//页面来源，通过页面来源获取当前页面所有弹窗数据</span>
+  triggerFactor<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>  <span class="token comment">//触发时机，根据触发时机过滤所需要弹窗数据</span>
+  id<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>   <span class="token comment">//根据id查询单个弹窗数据</span>
+  componentName<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>  <span class="token comment">//根据组件名称，返回特定弹窗组件</span>
+  data<span class="token operator">?</span><span class="token operator">:</span> object  <span class="token comment">//传入特定数据，和componentName结合返回特定弹窗组件</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><div class="language-typescript extra-class"><pre class="language-typescript"><code>data<span class="token operator">:</span> <span class="token punctuation">{</span>
+  titleOne<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>   <span class="token comment">//主标题文案</span>
+  titleTwo<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>  <span class="token comment">//副标题文案</span>
+  titleThree<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>   <span class="token comment">//关闭文字链文案</span>
+  buttonOne<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>  <span class="token comment">//按钮文案</span>
+  bgPicUrl<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>  <span class="token comment">//背景图片url链接</span>
+  elementOnePicUrl<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>  <span class="token comment">//元素图1 url链接（header图片）</span>
+  elementTwoPicUrl<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>  <span class="token comment">//元素图2 url链接（背景图上图片）</span>
+  btnActionUrl<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>  <span class="token comment">//按钮1跳转协议 wbmain协议</span>
+  btnActionType<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>  <span class="token comment">//按钮1触发状态{ id: 0, value: '跳转新页面' },{ id: 1, value: '关闭弹窗并跳转新页面' },{ id: 2, value: '回退' },{ id: 3, value: '关闭弹窗' },{ id: 4, value: '无' }</span>
+  bgActionUrl<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>  <span class="token comment">//背景图跳转协议 wbmain协议</span>
+  bgActionType<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>  <span class="token comment">//背景图触发状态</span>
+  closeActionUrl<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>  <span class="token comment">//关闭按钮跳转协议 wbmain协议</span>
+  closeActionType<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>  <span class="token comment">//关闭按钮触发状态</span>
+  bgSpecial<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">,</span>  <span class="token comment">//背景动效（0：无，1：有背景动效）</span>
+  btnSpecial<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">,</span>  <span class="token comment">//按钮动效（0：无，1：呼吸动效）</span>
+  visibleDialog<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">boolean</span><span class="token punctuation">,</span>  <span class="token comment">//是否展示弹窗</span>
+  isVip<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>  <span class="token comment">//是否会员触发弹窗{ id: 0, value: '非会员' },{ id: 1, value: '会员' },{ id: 2, value: '全部' },{ id: 3, value: '未登录' },</span>
+  fodderAnchor<span class="token operator">:</span> object<span class="token punctuation">,</span>  <span class="token comment">//</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.5fac2bb4.js" defer></script><script src="/assets/js/2.50dd06d5.js" defer></script><script src="/assets/js/8.bba9c763.js" defer></script>
+  </body>
+</html>
